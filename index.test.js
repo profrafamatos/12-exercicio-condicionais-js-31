@@ -2,7 +2,7 @@
 const numeroPar = require('./index');
 
 test('verifica se 4 é par', () => {
-  expect(numeroPar(4)).toBeThruthy();
+  expect(numeroPar(4)).toBe(true);
 });
 
 test('verifica se 7 não retorna nada', () => {
@@ -10,7 +10,7 @@ test('verifica se 7 não retorna nada', () => {
 });
 
 test('verifica se 0 é par', () => {
-  expect(numeroPar(0)).toBeThruthy();
+  expect(numeroPar(0)).toBe(true);
 });
 
 test('verifica se -3 não retorna nada', () => {
@@ -18,5 +18,5 @@ test('verifica se -3 não retorna nada', () => {
 });
 
 test('verifica se -8 é par', () => {
-  expect(numeroPar(-8)).toBeThruthy();
+  expect(numeroPar(-8)).toBe(true);
 });
